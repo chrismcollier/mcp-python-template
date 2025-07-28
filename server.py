@@ -4,6 +4,7 @@ from mcp.server.fastmcp import FastMCP
 from mcp.server.session import ServerSession
 from typing import Dict, Any, List, Optional
 
+# Import your tools from tools.py here
 from tools import (
     tool_name
 )
@@ -11,7 +12,7 @@ from tools import (
 # Create an MCP server
 mcp = FastMCP("Example Agent")
 
-
+# Create a tool function for each tool you want to use
 @mcp.tool()
 def tool_name(input: str, structured_input: Optional[Dict[str, Any]] = None) -> str:
     """ Put in some text & a structured input & get a repsponse
